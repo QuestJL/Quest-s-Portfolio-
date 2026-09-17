@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+               <title>Rock, Paper, Scissors</title>
+
+               <style>
+     body   {
+                    background-color: white;
+                    color: #222;
+                    text-align: center;
+        }
+     </style>
+   </head>
+ <body>
+
+   <h1>Rock, Paper, Scissors</h1>
+
+<button onclick="play('rock')">Rock</button>
+<button onclick="play('paper')">Paper</button>
+<button onclick="play('scissors')">Scissors</button>
+
+<p id="result"></p>
+
+<script>
+
+function play(userChoice)  {
+       var choices = ["rock", "paper", "scissors"];
+       var computerChoice = choices[Math.floor(Math.random() * 3)];
+
+       var outcome;
+
+       if (userChoice === computerChoice)    {
+                 outcome = "It's a tie!";
+              } else if (
+                    (userChoice === "rock" && computerChoice === "scissors")   ||
+                    (userChoice === "paper" && computerChoice === "rock")   ||
+                    (userChoice === "scissors" && computerChoice === "paper")
+             )   {
+                outcome = "You win!"; 
+             }   else    {
+                 outcome= "You lose";
+             }
+
+     document.getElementById("result").textContent =
+          "You chose "  + userChoice + " . Computer chose " + computerChoice + ". " + outcome;
+             }
+
+</script>
+
+</body>
+</html>
