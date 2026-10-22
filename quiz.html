@@ -25,7 +25,7 @@
         transition: background-color 0.3s;
       }
 
-      button: hover {
+      button:hover {
         background-color: #c4c4c4;
       }
    </style>
@@ -33,6 +33,7 @@
    <body>
     
 <h1>Quest's 1st Quiz</h1>
+<h2 id="socre">Score: 0</h2>
 <p>1. What does HTML stand for?</p>
 <button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">HyperTrainer Marking Language</button>
 <button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90';">HyperText Markup Language</button>
@@ -75,7 +76,7 @@
 <button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90';">&lt;img&gt;</button>
 <button onclick="alert('Try again'); this.style.backgroundColor = 'red';">&lt;src&gt;</button>
 
-<p>8. In JavaScript, what does getElementByID do?</p>
+<p>8. In JavaScript, what does getElementById do?</p>
 <button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">Deletes an element</button>
 <button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90';">Finds an element by its unique ID</button>
 <button onclick="alert('Try again'); this.style.backgroundColor = 'red';">Creates a new element</button>
@@ -93,5 +94,10 @@
 <button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90';">. (period)</button>
 <button onclick="alert('Incorrect'); this.style.backgroundColor = 'red';">@</button>
 
+<script>
+   let score = 0;
+</script> 
+</script>
+          
 </body>
 </html>
