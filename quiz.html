@@ -46,72 +46,72 @@
 <p>2. Which tag creates a clickable link?</p>
 <button onclick="alert('Try again!'); this.style.backgroundColor = 'red'; lockQuestion(this);">&lt;link&gt;</button>
 <button onclick="alert('Good try'); this.style.backgroundColor = 'red'; lockQuestion(this);">&lt;href&gt;</button>
-<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; addPoint();">&lt;a&gt;</button>
+<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">&lt;a&gt;</button>
 <button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">&lt;click&gt;</button>
 </div>
 
 <div class="question">
 <p>3. Which tag makes the biggest heading?</p>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">&lt;h6&gt;</button>
-<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; addPoint();">&lt;h1&gt;</button>
-<button onclick="alert('Nice try'); this.style.backgroundColor = 'red';">&lt;head&gt;</button>
-<button onclick="alert('Womp womp'); this.style.backgroundColor = 'red';">&lt;big&gt;</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">&lt;h6&gt;</button>
+<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">&lt;h1&gt;</button>
+<button onclick="alert('Nice try'); this.style.backgroundColor = 'red'; lockQuestion(this);">&lt;head&gt;</button>
+<button onclick="alert('Womp womp'); this.style.backgroundColor = 'red'; lockQuestion(this);">&lt;big&gt;</button>
 </div>
 
 <div class="question">
 <p>4. What does CSS stand for?</p>
-<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; addPoint();">Cascading Style Sheets</button>
-<button onclick="alert('Not quite'); this.style.backgroundColor = 'red';">Creative Style System</button>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">Computer Style Sheets</button>
-<button onclick="alert('Try again'); this.style.backgroundColor = 'red';">Colorful Style Syntax</button>
+<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">Cascading Style Sheets</button>
+<button onclick="alert('Not quite'); this.style.backgroundColor = 'red'; lockQuestion(this);">Creative Style System</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">Computer Style Sheets</button>
+<button onclick="alert('Try again'); this.style.backgroundColor = 'red'; lockQuestion(this);">Colorful Style Syntax</button>
 </div>
 
 <div class="question">
 <p>5. Which CSS property changes text color?</p>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">text-color</button>
-<button onclick="alert('Not quite'); this.style.backgroundColor = 'red';">font-color</button>
-<button onclick="alert('Correct'); this.style.backgroundColor = '#90EE90'; addPoint();">color</button>
-<button onclick="alert('Try again'); this.style.backgroundColor = 'red';">background-color</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">text-color</button>
+<button onclick="alert('Not quite'); this.style.backgroundColor = 'red'; lockQuestion(this);">font-color</button>
+<button onclick="alert('Correct'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">color</button>
+<button onclick="alert('Try again'); this.style.backgroundColor = 'red'; lockQuestion(this);">background-color</button>
 </div>
 
 <div class="question">
 <p>6. Which CSS property makes elements sit side by side?</p>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">Display: block</button>
-<button onclick="alert('Correct'); this.style.backgroundColor = '#90EE90'; addPoint();">Display: flex</button>
-<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red';">Align: row</button>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">side-by-side: true</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">Display: block</button>
+<button onclick="alert('Correct'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">Display: flex</button>
+<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red'; lockQuestion(this);">Align: row</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">side-by-side: true</button>
 </div>
 
 <div class="question"
 <p>7. Which tag is used to display an image?</p>
-<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red';">&lt;picture&gt;</button>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">&lt;image&gt;</button>
-<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; addPoint();">&lt;img&gt;</button>
-<button onclick="alert('Try again'); this.style.backgroundColor = 'red';">&lt;src&gt;</button>
+<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red'; lockQuestion(this);">&lt;picture&gt;</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">&lt;image&gt;</button>
+<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">&lt;img&gt;</button>
+<button onclick="alert('Try again'); this.style.backgroundColor = 'red'; lockQuestion(this);">&lt;src&gt;</button>
 </div>
 
 <div class="question">
 <p>8. In JavaScript, what does getElementById do?</p>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">Deletes an element</button>
-<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; addPoint();">Finds an element by its unique ID</button>
-<button onclick="alert('Try again'); this.style.backgroundColor = 'red';">Creates a new element</button>
-<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red';">Changes an element's color</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">Deletes an element</button>
+<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">Finds an element by its unique ID</button>
+<button onclick="alert('Try again'); this.style.backgroundColor = 'red'; lockQuestion(this);">Creates a new element</button>
+<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red'; lockQuestion(this);">Changes an element's color</button>
 </div>
 
 <div class="questions">
 <p>9. What does appendChild() do?</p>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">Removes an element from the page</button>
-<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; addPoint();">Adds an element inside another element</button>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">Changes an element's text</button>
-<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red';">Copies an element</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">Removes an element from the page</button>
+<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">Adds an element inside another element</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">Changes an element's text</button>
+<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red'; lockQuestion(this);">Copies an element</button>
 </div>
 
 <div class="questions">
 <p>10. Which symbol wraps a CSS class selector?</p>
-<button onclick="alert('Wrong'); this.style.backgroundColor = 'red';">#</button>
-<button onclick="alert('Try again'); this.style.backgroundColor = 'red';">%</button>
-<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; addPoint();">. (period)</button>
-<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red';">@</button>
+<button onclick="alert('Wrong'); this.style.backgroundColor = 'red'; lockQuestion(this);">#</button>
+<button onclick="alert('Try again'); this.style.backgroundColor = 'red'; lockQuestion(this);">%</button>
+<button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">. (period)</button>
+<button onclick="alert('Incorrect'); this.style.backgroundColor = 'red'; lockQuestion(this);">@</button>
 </div>
           
 <script>
