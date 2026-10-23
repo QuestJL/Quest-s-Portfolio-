@@ -114,6 +114,9 @@
 <button onclick="alert('Incorrect'); this.style.backgroundColor = 'red'; lockQuestion(this);">@</button>
 </div>
        <h2 id="result"></h2>
+
+<button onclick="restartQuiz()">Restart</button>
+          
 <script>
    let score = 0;
    let answered = 0; 
@@ -137,7 +140,18 @@
                  setTimeout(showResult, 0);         
           }
    }
-          
+
+   function restartQuiz() {
+          score = 0;
+          answered = 0;
+          document.getElementById("score").textContent = "Score: 0";
+          document.getElementById("result").textContent = "";
+          let buttons = document.querySelectorAll("button");
+          buttons.forEach(function(b) {
+              b.disabled = false;
+              b.style.backgroundColor = "";
+       });
+       
 </script> 
           
 </body>
