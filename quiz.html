@@ -113,10 +113,13 @@
 <button onclick="alert('Correct!'); this.style.backgroundColor = '#90EE90'; lockQuestion(this); addPoint();">. (period)</button>
 <button onclick="alert('Incorrect'); this.style.backgroundColor = 'red'; lockQuestion(this);">@</button>
 </div>
-          
+       <h2 id="result"></h2>
 <script>
    let score = 0;
+   let answered = 0; 
 
+   function showResult() {
+       document.getElementById("result").textContent = "You got " + score + " out of 10!";
    function addPoint() {
        score = score + 1;
        document.getElementById("score").textContent = "Score: " + score;
@@ -127,7 +130,12 @@
           buttons.forEach(function(b) {
                  b.disabled = true;
           });
+          answered = answered + 1;                  //new
+          if (answered === 10) {                    //new
+                 setTimeout(showResult, 0);         //new
+          }
    }
+          
 </script> 
           
 </body>
