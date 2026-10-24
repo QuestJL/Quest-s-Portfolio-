@@ -74,6 +74,24 @@
               background-color: #e5e7eb;
               border-color: #c7cdd6;
        }
+
+       #result {
+              text-align: center; 
+              font-size: 24px;
+              color: #1f2937;
+       }
+
+       .restart {
+              display: block;
+              margin: 20px auto 0 auto;
+              background-color: #2563eb;
+              color: white;
+              font-weight: 600;
+       }
+
+       .restart:hover {
+              background-color: #1d4ed8;
+       }
        
    </style>
   </head>
@@ -162,7 +180,7 @@
 </div>
        <h2 id="result"></h2>
 
-<button onclick="restartQuiz()">Restart</button>
+<button class="restart" onclick="restartQuiz()">Restart</button>
           
 <script>
    let score = 0;
