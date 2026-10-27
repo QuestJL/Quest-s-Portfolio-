@@ -72,21 +72,27 @@ function play(userChoice)  {
        var computerChoice = choices[Math.floor(Math.random() * 3)];
 
        var outcome;
+       var resultClass;
 
        if (userChoice === computerChoice)    {
                  outcome = "It's a tie!";
+                 resultClass = "tie";
               } else if (
                     (userChoice === "rock" && computerChoice === "scissors")   ||
                     (userChoice === "paper" && computerChoice === "rock")   ||
                     (userChoice === "scissors" && computerChoice === "paper")
              )   {
                 outcome = "You win!"; 
+                resultClass = "win";
              }   else    {
-                 outcome= "You lose";
+                 outcome = "You lose";
+                 resultClass = "lose";
              }
 
-     document.getElementById("result").textContent =
+     var resultElement = document.getElementById("result");
+     resultElement.textContent =
           "You chose "  + userChoice + " . Computer chose " + computerChoice + ". " + outcome;
+      resultElement.className = resultClass;
              }
 
 </script>
